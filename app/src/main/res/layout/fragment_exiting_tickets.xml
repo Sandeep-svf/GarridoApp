@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_background"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ExitingTicketsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/edit_txt_background"
+                    android:layout_height="40dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:weightSum="3">
+                        <TextView
+                            android:id="@+id/device_tickets_date"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:layout_height="wrap_content"
+                            android:text="DATE"
+                            android:paddingLeft="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"/>
+                        <TextView
+                            android:id="@+id/device_tickets_companyname"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.1"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:text="CLIENT NAME"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textSize="11sp"/>
+                        <TextView
+                            android:id="@+id/device_tickets_number"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="wrap_content"
+                            android:text="TICKET NUMBER"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/exiting_ticket_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:text="@string/double_arrow"
+                    android:textColor="@color/liight_red" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_arrow"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:background="@color/lightpink"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_button_custom"
+                    android:padding="5dp"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/next_button_custom"
+                    android:padding="5dp"
+                    android:text="25"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_arrow"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:rotation="180"
+                    android:background="@color/lightpink"/>
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/double_arrow"
+                    android:textAlignment="center"
+                    android:rotation="180"
+                    android:textColor="@color/liight_red"
+                    android:background="@color/white"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

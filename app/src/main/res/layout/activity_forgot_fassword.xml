@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/forgotLayout"
+    android:orientation="vertical"
+    tools:context=".Activity.ForgotFassword">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_flip">
+
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/splashscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORGOT PASSWORD"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:src="@drawable/line"
+            app:tint="@color/white" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:src="@drawable/line"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Employee ID*"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/empl_forgotPassId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_field_custom"
+            android:textColorHint="#EACBCB"
+            android:hint="@string/emails"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Full Name"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/empl_forgotPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_field_custom"
+            android:textColorHint="#EACBCB"
+            android:hint="@string/full_name"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textSize="14sp" />
+
+      <!--  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Confirm password"
+            android:textColor="#ED1F24"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_field_custom"
+            android:hint="@string/pass"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="#EACBCB"
+            android:textSize="14sp" />-->
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#B71E23"
+            android:layout_marginTop="35dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/forgottxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FORGOT PASSWORD"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:id="@+id/forgottxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+<!--
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.8">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/right_arrow"
+                        app:tint="@color/red">
+
+                    </ImageView>
+                </LinearLayout>
+-->
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    </FrameLayout>
+        <include layout="@layout/verification_code"></include>
+
+    </ViewFlipper>
+
+</LinearLayout>
+
+

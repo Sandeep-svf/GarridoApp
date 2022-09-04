@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    tools:context=".Activity.Reviewfinalize">
+
+    <LinearLayout
+        android:id="@+id/back_arrow_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back_arrow_pp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:tint="@color/white"
+            android:src="@drawable/back_arroe"
+            tools:ignore="UseAppTint">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REVIEW / FINALIZE"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/line"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/review_txt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/back_arrow_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <!--  <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="ADD Media"
+              android:gravity="center"
+              android:textSize="16sp"
+              android:textStyle="bold"
+              android:textColor="@color/white"/>
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="12dp"
+              android:src="@drawable/line"
+              app:tint="@color/white" />-->
+        <TextView
+            android:id="@+id/review_relized"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/review_txt_custom"
+            android:drawableRight="@drawable/arrow_righ"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="@string/review"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/review_txt_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:id="@+id/review_relized_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/submit_review"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"/>
+            </LinearLayout>
+
+<!--
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.4">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/right_arrow"
+                    app:tint="@color/red">
+
+                </ImageView>
+            </LinearLayout>
+-->
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

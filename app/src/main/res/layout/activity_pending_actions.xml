@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    tools:context=".Activity.ProductionInfo">
+
+    <RelativeLayout
+        android:id="@+id/spinnerlayout"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back_arrow_pp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:tint="@color/white"
+            android:src="@drawable/back_arroe"
+            tools:ignore="UseAppTint">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PENDING ACTION"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/line"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint=""
+            android:layout_marginLeft="280dp"
+            android:layout_toRightOf="@+id/back_arrow_pp"
+            android:backgroundTint="@color/white"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:tint="@color/white"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            tools:ignore="UseAppTint" />
+
+    </RelativeLayout>
+
+<!--
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/back_arrow_pp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:tint="@color/white"
+            android:src="@drawable/back_arroe"
+            tools:ignore="UseAppTint">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PENDING ACTION"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/line"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:layout_margin="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending Actions"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:src="@drawable/line"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending Action"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"/>
+            <EditText
+                android:id="@+id/pending_actiontxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_field_custom"
+                android:textColorHint="#EACBCB"
+                android:hint="Pending Action"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Target Date"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/edit_field_custom"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/text_pickerset"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="match_parent"
+                    android:hint="@string/date"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:textColorHint="#EACBCB"
+                    android:textSize="14sp"/>
+                <ImageView
+                    android:id="@+id/edittxt_datepiker"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/date"
+                    app:tint="@color/white" />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"/>
+            <EditText
+                android:id="@+id/pending_comments"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/edit_field_custom"
+                android:hint="Comments"
+                android:textColorHint="#EACBCB"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/plush"
+                        app:tint="@color/red" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD ACTION"
+                        android:textColor="@color/red"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="#B71E23">
+                <TextView
+                    android:id="@+id/pending_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD Media"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:id="@+id/pending_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/add_media"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold">
+
+                        </TextView>
+                    </LinearLayout>
+
+<!--
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="0.6">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/right_arrow"
+                            app:tint="@color/red">
+
+                        </ImageView>
+                    </LinearLayout>
+-->
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">GarridoApp</string>
+    <string name="emails">Email</string>
+    <string name="pass">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="date">09-08-2022</string>
+    <string name="serial_number">"L-456789123 "</string>
+    <string name="upload_pic_video">Upload\nPic &amp; Video</string>
+    <string name="upload_pic_videos">Upload Pic &amp; Video</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">LOGIN</string>
+    <string name="submit">SUBMIT</string>
+    <string name="welcome">WELCOME</string>
+    <string name="logout">Logout</string>
+    <string name="single_arrow">&lt;</string>
+    <string name="double_arrow">&lt;&lt;</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="please_back_to_exit">Please click BACK again to exit</string>
+    <string name="manisha">Manisha</string>
+    <string name="garrido">Garrido</string>
+    <string name="new_ticket_info">New Tickets Info</string>
+    <string name="machine_info">GO TO MACHIN INFO >></string>
+    <string name="discription">Discription</string>
+    <string name="product_info">Product Info</string>
+    <string name="confirm_logout">Confirm Logout</string>
+    <string name="are_you_sure_to_logout">Are you sure to Logout?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="create_ticket">New Ticket</string>
+    <string name="help">Help</string>
+    <string name="device_ticket">"DEVICE TICKETS"</string>
+    <string name="description">GO TO DESCRIPTION >></string>
+    <string name="product_infoo">GO TO PRODUCT INFO >></string>
+    <string name="pending_actions">GO TO PANDING ACTION >></string>
+    <string name="add_media">GO TO ADD MEDIA >></string>
+    <string name="submit_review">SUBMIT TICKET #NG-33-0006</string>
+    <string name="review">REVIEW / FINALIZE TICKET</string>
+    <string name="are_you_sure_to_review_closs">This goes to the New Ticket screen for this ticket to allow the TECH to simply progress through each screen in review.</string>
+    <string name="exiting_ticket">Exiting Tickets</string>
+    <string name="update_ticket_info">UPDATE</string>
+    <string name="please_connect_internet_connection">Please Connect Internet Connection ?</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="these_permissions_are_mandatory_for_this_application_please_allow_access">These Permissions are Mandatory for this Application. Please Allow Access.</string>
+    <string name="ok">Ok</string>
+    <string name="confirmPasswords">Confirm Password</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verifydesc">We have sent OTP on your email</string>
+    <string name="verify">Verify</string>
+
+</resources>
